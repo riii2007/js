@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherVerse Premium</title>
+
+    <link rel="stylesheet" href="weather.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🌤 WeatherVerse Premium</h1>
+
+        <div class="search">
+
+            <input type="text"
+                   id="city"
+                   placeholder="Enter city">
+
+            <button onclick="loadWeather()">
+                Search
+            </button>
+
+            <button onclick="useLocation()">
+                📍
+            </button>
+
+        </div>
+
+        <h2 id="place">
+            Search a city
+        </h2>
+
+        <h1>
+            <span id="temp">--</span>°C
+        </h1>
+
+        <p id="desc">
+            Current weather
+        </p>
+
+        <p id="wind"></p>
+
+        <div class="forecast"
+             id="forecast">
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="weather.js"></script>
+
+</body>
+</html>
